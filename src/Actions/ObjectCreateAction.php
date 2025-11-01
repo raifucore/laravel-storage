@@ -114,9 +114,8 @@ class ObjectCreateAction
     private function _filename(): string
     {
         return sprintf(
-            '%s_%s.%s',
-            date('Ymd_Hi'),
-            Str::uuid()->toString(),
+            '%s.%s',
+            mb_strtolower(Str::ulid()->toString()),
             mb_strtolower($this->dto->getUploadedFile()->getClientOriginalExtension())
         );
     }
