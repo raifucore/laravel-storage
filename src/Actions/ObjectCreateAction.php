@@ -2,6 +2,7 @@
 
 namespace RaifuCore\Storage\Actions;
 
+use Illuminate\Support\Str;
 use RaifuCore\Storage\Enums\StorageEnum;
 use RaifuCore\Storage\Enums\StorageObjectTypeEnum;
 use RaifuCore\Storage\Exceptions\FileDeleteException;
